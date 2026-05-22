@@ -95,3 +95,13 @@ html {
   border: 3px solid red;
   box-shadow: 0 0 20px red, 0 0 40px red;
 }
+
+.about-img {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid red;
+
+  box-shadow: 0 0 25px red;
+}
