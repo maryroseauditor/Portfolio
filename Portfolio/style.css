@@ -105,3 +105,9 @@ html {
 
   box-shadow: 0 0 25px red;
 }
+.about-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
