@@ -1,0 +1,97 @@
+body {
+  background-color: #000000;
+  color: white;
+  font-family: Arial, sans-serif;
+  animation: fadeIn 1s ease-in;
+}
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* SMOOTH SCROLL */
+html {
+  scroll-behavior: smooth;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 60px;
+  background-color: #000000;
+  border-bottom: 1px solid #222;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
+
+/* MENU */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+
+.nav-links li a:hover {
+  color: red;
+}
+
+/* ACTIVE LINK */
+.nav-links a.active {
+  color: red;
+  border-bottom: 2px solid red;
+  padding-bottom: 3px;
+}
+
+/* HOME */
+.home {
+  text-align: left;
+  margin-top: 210px;
+  padding: 0 60px;
+}
+
+/* HOME TEXT */
+.home h1 {
+  font-size: 45px;
+}
+
+.home p {
+  margin-top: 10px;
+  color: #ccc;
+  font-size: 18px;
+  max-width: 600px;
+}
+
+/* RED NAME */
+.red {
+  color: red;
+}
+
+/* PROFILE IMAGE */
+.profile-img {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid white;
+
+  position: relative;
+  left: 930px; /* 👉 move right */
+  transform: translateY(-170px);/* pagtaas ng pic */
+  border: 3px solid red;
+  box-shadow: 0 0 20px red, 0 0 40px red;
+}
