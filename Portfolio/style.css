@@ -206,93 +206,6 @@ body {
   text-align: justify; 
 }
 
-.services-section {
-  padding: 100px 60px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.services-title {
-  text-align: center;
-  margin-bottom: 50px;
-}
-
-.services-title h2 {
-  font-size: 40px;
-  margin-bottom: 15px;
-}
-
-.services-title p {
-  color: #ccc;
-  font-size: 16px;
-  max-width: 700px;
-  margin: 0 auto;
-  line-height: 1.5;
-}
-
-.services-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
-}
-
-.service-card {
-  background-color: #111111;
-  border: 1px solid #222222;
-  padding: 35px 25px;
-  border-radius: 12px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-  transition: all 0.3s ease;
-}
-
-.service-card:hover {
-  transform: translateY(-8px);
-  border-color: red;
-  box-shadow: 0 0 25px rgba(255, 0, 0, 0.3);
-}
-
-.service-icon-wrapper {
-  width: 70px;
-  height: 70px;
-  background-color: #1a0505;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 1.5px solid #3d0c0c;
-  transition: all 0.3s ease;
-}
-
-.service-icon {
-  width: 32px;
-  height: 32px;
-  color: red;
-}
-
-.service-card:hover .service-icon-wrapper {
-  background-color: red;
-  box-shadow: 0 0 15px red;
-}
-
-.service-card:hover .service-icon {
-  color: white;
-}
-
-.service-card h3 {
-  font-size: 22px;
-  color: white;
-}
-
-.service-card p {
-  font-size: 14px;
-  color: #aaa;
-  line-height: 1.6;
-}
-
 .skills-section {
   padding: 100px 60px;
   max-width: 1200px;
@@ -364,7 +277,7 @@ body {
 }
 
 .contact-section {
-  padding: 120px 60px 100px 60px;
+  padding: 120px 60px 150px 60px;
   max-width: 1200px;
   margin: 0 auto;
   text-align: center;
@@ -380,45 +293,47 @@ body {
 
 .contact-links-container {
   display: flex;
-  justify-content: center;
+  flex-direction: column; 
   align-items: center;
-  gap: 50px;
-  flex-wrap: wrap;
+  justify-content: center;
+  gap: 35px; 
 }
 
 .contact-icon-box {
   background-color: #111111;
   border: 2px solid #222222;
-  border-radius: 50%;
-  width: 140px;
-  height: 140px;
+  border-radius: 16px;
+  width: 450px; 
+  height: 85px; 
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 12px;
+  gap: 20px;
   text-decoration: none;
+  padding: 0 30px;
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .contact-icon {
-  width: 35px;
-  height: 35px;
+  width: 30px;
+  height: 30px;
   color: #aaa;
   transition: color 0.3s ease;
+  flex-shrink: 0;
 }
 
 .contact-icon-box span {
-  font-size: 14px;
+  font-size: 18px;
   font-weight: bold;
   color: #aaa;
   transition: color 0.3s ease;
 }
 
 .contact-icon-box:hover {
-  transform: translateY(-10px);
+  transform: translateY(-8px);
   border-color: red;
-  box-shadow: 0 0 30px rgba(255, 0, 0, 0.6);
+  box-shadow: 0 0 35px rgba(255, 0, 0, 0.7);
 }
 
 .contact-icon-box:hover .contact-icon,
