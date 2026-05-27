@@ -26,6 +26,11 @@ body {
   padding: 15px 60px;
   background-color: #000000;
   border-bottom: 1px solid #222;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
 }
 
 .logo {
@@ -78,7 +83,6 @@ body {
   height: 350px;
   border-radius: 50%;
   object-fit: cover;
-  border: 3px solid white;
   position: relative;
   left: 930px; 
   transform: translateY(-170px);
@@ -202,6 +206,93 @@ body {
   text-align: justify; 
 }
 
+.services-section {
+  padding: 100px 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.services-title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.services-title h2 {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.services-title p {
+  color: #ccc;
+  font-size: 16px;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.service-card {
+  background-color: #111111;
+  border: 1px solid #222222;
+  padding: 35px 25px;
+  border-radius: 12px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  transition: all 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  border-color: red;
+  box-shadow: 0 0 25px rgba(255, 0, 0, 0.3);
+}
+
+.service-icon-wrapper {
+  width: 70px;
+  height: 70px;
+  background-color: #1a0505;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1.5px solid #3d0c0c;
+  transition: all 0.3s ease;
+}
+
+.service-icon {
+  width: 32px;
+  height: 32px;
+  color: red;
+}
+
+.service-card:hover .service-icon-wrapper {
+  background-color: red;
+  box-shadow: 0 0 15px red;
+}
+
+.service-card:hover .service-icon {
+  color: white;
+}
+
+.service-card h3 {
+  font-size: 22px;
+  color: white;
+}
+
+.service-card p {
+  font-size: 14px;
+  color: #aaa;
+  line-height: 1.6;
+}
+
 .skills-section {
   padding: 100px 60px;
   max-width: 1200px;
@@ -273,93 +364,7 @@ body {
 }
 
 .contact-section {
-  padding: 100px 60px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.contact-title {
-  text-align: center;
-  margin-bottom: 50px;
-}
-
-.contact-title h2 {
-  font-size: 40px;
-}
-
-.contact-form {
-  width: 100%;
-}
-
-.form-container {
-  display: flex;
-  gap: 30px;
-  justify-content: center;
-}
-
-.input-group {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  width: 45%;
-}
-
-.message-group {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  width: 55%;
-}
-
-.input-group input, 
-.message-group textarea {
-  width: 100%;
-  background-color: #111111;
-  color: white;
-  border: 1.5px solid #290808;
-  border-radius: 14px;
-  padding: 18px 25px;
-  font-size: 16px;
-  outline: none;
-  transition: all 0.3s ease;
-}
-
-.input-group input:focus, 
-.message-group textarea:focus {
-  border-color: red;
-  box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
-}
-
-.message-group textarea {
-  height: 235px;
-  resize: none;
-}
-
-.btn-box {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.submit-btn {
-  background-color: red;
-  color: white;
-  border: none;
-  border-radius: 25px;
-  padding: 15px 35px;
-  font-size: 16px;
-  font-weight: bold;
-  cursor: pointer;
-  box-shadow: 0 0 15px rgba(255, 0, 0, 0.6);
-  transition: all 0.3s ease;
-}
-
-.submit-btn:hover {
-  background-color: darkred;
-  box-shadow: 0 0 25px red;
-  transform: translateY(-2px);
-}
-.contact-section {
-  padding: 100px 60px;
+  padding: 120px 60px 100px 60px;
   max-width: 1200px;
   margin: 0 auto;
   text-align: center;
@@ -409,7 +414,6 @@ body {
   color: #aaa;
   transition: color 0.3s ease;
 }
-
 
 .contact-icon-box:hover {
   transform: translateY(-10px);
