@@ -358,3 +358,66 @@ body {
   box-shadow: 0 0 25px red;
   transform: translateY(-2px);
 }
+.contact-section {
+  padding: 100px 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact-title {
+  margin-bottom: 60px;
+}
+
+.contact-title h2 {
+  font-size: 45px;
+}
+
+.contact-links-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.contact-icon-box {
+  background-color: #111111;
+  border: 2px solid #222222;
+  border-radius: 50%;
+  width: 140px;
+  height: 140px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  text-decoration: none;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.contact-icon {
+  width: 35px;
+  height: 35px;
+  color: #aaa;
+  transition: color 0.3s ease;
+}
+
+.contact-icon-box span {
+  font-size: 14px;
+  font-weight: bold;
+  color: #aaa;
+  transition: color 0.3s ease;
+}
+
+
+.contact-icon-box:hover {
+  transform: translateY(-10px);
+  border-color: red;
+  box-shadow: 0 0 30px rgba(255, 0, 0, 0.6);
+}
+
+.contact-icon-box:hover .contact-icon,
+.contact-icon-box:hover span {
+  color: white;
+}
