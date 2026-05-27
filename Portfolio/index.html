@@ -14,9 +14,9 @@
     <ul class="nav-links">
       <li><a href="#home" class="active">Home</a></li>
       <li><a href="#about">About</a></li>
-      <li><a href="#Projects">Projects</a></li>
-      <li><a href="#Skills">Skills</a></li>
-      <li><a href="#Contact">Contact</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
 
   </nav>
@@ -62,7 +62,7 @@
 
   </section>
 
-  <section id="Projects" class="projects">
+  <section id="projects" class="projects">
 
     <div class="projects-title">
       <h2>My <span class="red">Projects</span></h2>
@@ -99,10 +99,10 @@
 
   </section>
 
-  <section id="Skills" class="skills-section">
+  <section id="skills" class="skills-section">
 
     <div class="skills-title">
-      <h2>My <span class="red">Stack</span></h2>
+      <h2>My Tech <span class="red">Stack</span></h2>
       <p>Here are the technologies, programming languages, and creative software design tools that I am continuously learning and working with during my IT journey.</p>
     </div>
 
@@ -137,7 +137,7 @@
 
   </section>
 
-  <section id="Contact" class="contact-section">
+  <section id="contact" class="contact-section">
 
     <div class="contact-title">
       <h2>Work With <span class="red">Me</span></h2>
@@ -169,6 +169,30 @@
     </div>
 
   </section>
+
+  <script>
+    const sections = document.querySelectorAll('section');
+    const navLinks = document.querySelectorAll('.nav-links a');
+
+    window.addEventListener('scroll', () => {
+        let current = '';
+        
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.clientHeight;
+            if (window.scrollY >= (sectionTop - 150)) {
+                current = section.getAttribute('id');
+            }
+        });
+
+        navLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href') === `#${current}`) {
+                link.classList.add('active');
+            }
+        });
+    });
+  </script>
 
 </body>
 
