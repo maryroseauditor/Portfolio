@@ -64,9 +64,9 @@ body {
 
 .home {
   text-align: left;
-  margin-top: 140px;
-  padding: 40px 60px 0 60px;
-  scroll-margin-top: 140px;
+  margin-top: 240px;
+  padding: 20px 60px 0 60px;
+  scroll-margin-top: 240px;
 }
 
 .home h1 {
@@ -341,4 +341,59 @@ body {
 .contact-icon-box:hover .contact-icon,
 .contact-icon-box:hover span {
   color: white;
+}
+@media (max-width: 768px) {
+  .navbar {
+    padding: 15px 20px;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav-links {
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .home {
+    margin-top: 180px;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .home-container {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .profile-img {
+    position: static;
+    transform: none;
+    width: 250px;
+    height: 250px;
+    margin-bottom: 20px;
+  }
+
+  .about-container {
+    flex-direction: column;
+    gap: 40px;
+    padding: 0 20px;
+  }
+
+  .about-img {
+    width: 250px;
+    height: 250px;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+    padding: 0 20px;
+  }
+
+  .contact-icon-box {
+    width: 100%;
+    max-width: 350px;
+  }
 }
