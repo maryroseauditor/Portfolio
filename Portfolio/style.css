@@ -6,6 +6,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 90px;
 }
 
 body {
@@ -63,8 +64,9 @@ body {
 
 .home {
   text-align: left;
-  margin-top: 210px;
-  padding: 0 60px;
+  margin-top: 140px;
+  padding: 40px 60px 0 60px;
+  scroll-margin-top: 140px;
 }
 
 .home h1 {
