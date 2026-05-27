@@ -96,18 +96,42 @@ html {
   box-shadow: 0 0 20px red, 0 0 40px red;
 }
 
+.about {
+  padding: 100px 60px;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;     
+  justify-content: center;  /* Pinapagitna ang dalawa sa screen */
+  gap: 60px;                /* Saktong distansya ng pic at text */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 .about-img {
   width: 350px;
-  height: 350px;
-  border-radius: 50%;
-  object-fit: cover;
+  height: 350px;           
+  border-radius: 50%;       
+  object-fit: cover;        
   border: 3px solid red;
-
-  box-shadow: 0 0 25px red;
+  box-shadow: 0 0 25px red; /* Gagana na ito nang tama dahil wala nang letrang 'I' */
+  flex-shrink: 0;           
 }
-.about-container{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+
+.about-text {
+  max-width: 650px;         
+}
+
+.about-text h1 {
+  font-size: 45px;
+  margin-bottom: 25px;      
+}
+
+.about-text h3 {
+  font-size: 18px;
+  font-weight: normal;      
+  line-height: 1.7;         
+  color: #ccc;              
 }
 
