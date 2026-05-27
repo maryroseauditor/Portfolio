@@ -104,7 +104,7 @@ html {
   display: flex;
   align-items: center;     
   justify-content: center;  /* Pinapagitna ang dalawa sa screen */
-  gap: 120px;                /* Saktong distansya ng pic at text */
+  gap: 150px;                /* Saktong distansya ng pic at text */
   max-width: 1200px;
   margin: 0 auto;
 }
