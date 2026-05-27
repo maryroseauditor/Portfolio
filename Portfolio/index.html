@@ -114,26 +114,61 @@
       </div>
 
       <div class="skill-card">
-        <img src="CSS.webp" alt="CSS">
+        <img src="CSS.jpg" alt="CSS">
         <span>CSS</span>
       </div>
 
       <div class="skill-card">
-        <img src="Python.png" alt="Python">
+        <img src="Python.jpg" alt="Python">
         <span>Python</span>
       </div>
 
       <div class="skill-card">
-        <img src="Php.png" alt="PHP">
+        <img src="Php.jpg" alt="PHP">
         <span>PHP</span>
       </div>
 
       <div class="skill-card">
-        <img src="Photoshop.webp" alt="Photoshop">
+        <img src="Photoshop.jpg" alt="Photoshop">
         <span>Photoshop</span>
       </div>
 
     </div>
+
+  </section>
+
+  <section id="Contact" class="contact-section">
+
+    <div class="contact-title">
+      <h2>Contact <span class="red">Me</span></h2>
+    </div>
+
+        <form class="contact-form" action="https://formsubmit.co" method="POST">
+
+      <!-- Idinagdag natin ito para iwas sa error ng page redirection -->
+      <input type="hidden" name="_next" value="http://127.0.0">
+      <input type="hidden" name="_captcha" value="false">
+
+      <div class="form-container">
+
+        <div class="input-group">
+          <input type="text" name="Full Name" placeholder="Full Name" required>
+          <input type="email" name="Email" placeholder="Email" required>
+          <input type="tel" name="Phone Number" placeholder="Phone Number">
+          <input type="text" name="Subject" placeholder="Subject">
+        </div>
+
+        <div class="message-group">
+          <textarea name="Message" placeholder="Your Message" required></textarea>
+          <div class="btn-box">
+            <button type="submit" class="submit-btn">Send Message</button>
+          </div>
+        </div>
+
+      </div>
+
+    </form>
+
 
   </section>
 

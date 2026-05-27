@@ -271,3 +271,90 @@ body {
 .skill-card:hover span {
   color: white;
 }
+
+.contact-section {
+  padding: 100px 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contact-title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.contact-title h2 {
+  font-size: 40px;
+}
+
+.contact-form {
+  width: 100%;
+}
+
+.form-container {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 45%;
+}
+
+.message-group {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 55%;
+}
+
+.input-group input, 
+.message-group textarea {
+  width: 100%;
+  background-color: #111111;
+  color: white;
+  border: 1.5px solid #290808;
+  border-radius: 14px;
+  padding: 18px 25px;
+  font-size: 16px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.input-group input:focus, 
+.message-group textarea:focus {
+  border-color: red;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+}
+
+.message-group textarea {
+  height: 235px;
+  resize: none;
+}
+
+.btn-box {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.submit-btn {
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 15px 35px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 0 15px rgba(255, 0, 0, 0.6);
+  transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: darkred;
+  box-shadow: 0 0 25px red;
+  transform: translateY(-2px);
+}
